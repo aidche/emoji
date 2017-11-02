@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import Emojis from './Emojis'
+import Emojis from './Emojis';
+import EmojiJSON from './emojiList.json';
 
 
 class App extends Component { 
     constructor (props) {
         super(props);
         this.state = {
-            list: [],
+            list: list,
             input: ''
         }
 
