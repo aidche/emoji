@@ -7,7 +7,7 @@ class App extends Component {
     constructor (props) {
         super(props);
         this.state = {
-            list: list,
+            list: EmojiJSON,
             input: ''
         }
 
@@ -32,6 +32,7 @@ class App extends Component {
                     onChange={this.handleInput}
 
                 />
+
                 <Emojis parentState={this.state.list}/>
             </div>
         )
