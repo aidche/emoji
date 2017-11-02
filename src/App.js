@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+<<<<<<< HEAD
 import Emojis from './Emojis';
 import EmojiJSON from './emojiList.json';
 
@@ -22,13 +23,30 @@ class App extends Component {
         input : event.target.value
     })
  }
+=======
+import Emojis from './Emojis'
+
+
+class App extends Componaaent { 
+    constructor (props) {
+        super(props);
+        this.state = {
+            list: [1, 2, 3],
+            input: ''
+        }
+    }
+
+>>>>>>> 977986df2738f00e850310484aa0ce0feff3b230
     render () {
         return (
             <div className="app">
                 <input 
                     className="searchbar"
                     placeholder="Type something"
+<<<<<<< HEAD
                     onChange={this.handleInput}
+=======
+>>>>>>> 977986df2738f00e850310484aa0ce0feff3b230
                 />
                 <Emojis parentState={this.state.list}/>
             </div>
